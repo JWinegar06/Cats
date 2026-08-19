@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>What Everyone Should Know About Cats</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #332b3a;
+      background: #eaf7fb;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 3.5rem 1rem 2.5rem;
+      background: linear-gradient(135deg, #d9f2f7, #eee3fa);
+      border-bottom: 1px solid #d9d3e4;
+    }
+    h1 { margin: 0; color: #6c3b86; font-size: clamp(2rem, 5vw, 3.2rem); }
+    header p { margin: .6rem auto 0; max-width: 650px; color: #62576a; }
+    main { width: min(1000px, 92%); margin: 2rem auto; }
+    section {
+      background: #fff;
+      margin: 1.5rem 0;
+      padding: 1.75rem;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(70, 52, 80, .08);
+    }
+    h2 { color: #6c3b86; margin-top: 0; border-bottom: 2px solid #eee3fa; padding-bottom: .5rem; }
+    h3 { color: #4c6570; }
+    .fact-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+    figure { margin: 1rem 0 0; text-align: center; }
+    img { display: block; width: 100%; max-height: 420px; object-fit: cover; border-radius: 12px; margin: 0 auto; }
+    .fact-grid figure img { height: 300px; max-height: none; object-fit: cover; }
+    figcaption { margin-top: .6rem; color: #6c6570; font-size: .95rem; }
+    a { color: #6c3b86; font-weight: 600; }
+    ul, ol { padding-left: 1.4rem; }
+    fieldset {
+      border: 1px solid #ddd5e5;
+      border-radius: 12px;
+      padding: 1rem 1.2rem;
+      margin: 1rem 0;
+      background: #fcfaff;
+    }
+    legend { font-weight: 700; color: #5c3a6d; padding: 0 .4rem; }
+    label { display: inline-flex; align-items: center; gap: .4rem; margin: .35rem 1rem .35rem 0; }
+    input[type="text"] {
+      width: 100%;
+      padding: .8rem 1rem;
+      border: 1px solid #cfc7d7;
+      border-radius: 9px;
+      font-size: 1rem;
+      margin-top: .4rem;
+    }
+    button {
+      margin-top: 1rem;
+      padding: .8rem 1.5rem;
+      border: 0;
+      border-radius: 9px;
+      background: #6c3b86;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    button:hover { background: #57306c; }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem 3rem;
+      color: #665d6b;
+    }
+    footer img { width: 180px; height: auto; margin: 1rem auto 0; }
+    @media (max-width: 700px) { .fact-grid { grid-template-columns: 1fr; } section { padding: 1.2rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>What Everyone Should Know About Cats</h1>
+    <p>A small collection of cat facts, photos, and a quick form for fellow cat lovers.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Adorable Cat Picture</h2>
+      <figure>
+        <img src="https://predatorfreenz.org/wp-content/uploads/2017/08/Catstalkprey-by-Jennifer-Barnard-Wikimedia-760x400-1.jpg" alt="A cat stalking prey" />
+        <figcaption>I'm being <a href="https://www.streetdirectory.com/travel_guide/29691/pets/cats_love_to_hunt___its_in_their_genes.html" target="_blank" rel="noopener noreferrer">hunted</a>.</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Cat Facts</h2>
+      <div class="fact-grid">
+        <div>
+          <h3>3 Things Cats Love</h3>
+          <ul>
+            <li>Their personal space</li>
+            <li>Your personal space</li>
+            <li>Sunshine naps</li>
+          </ul>
+          <figure>
+            <img src="https://cdn.mos.cms.futurecdn.net/owsKvPpwN2UUqWkDsRRhd3-650-80.jpg.webp" alt="A cat napping in the sun" />
+            <figcaption>Cats <em>love</em> naps.</figcaption>
+          </figure>
+        </div>
+        <div>
+          <h3>3 Things Cats Hate</h3>
+          <ol>
+            <li>Not receiving attention</li>
+            <li>Receiving attention</li>
+            <li>Bath time</li>
+          </ol>
+          <figure>
+            <img src="https://www.rover.com/blog/wp-content/uploads/grumpy-wet-cat-960x540.jpg" alt="A wet, grumpy cat during a bath" />
+            <figcaption>Cats <strong>hate</strong> getting baths from humans.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Tell Us About Your Cat</h2>
+      <form action="https://freecatphotoapp.com/submit-cat-photo">
+        <fieldset>
+          <legend>Is your cat an indoor or outdoor cat?</legend>
+          <label><input type="radio" name="indoor-outdoor" value="indoor" checked /> Indoor</label>
+          <label><input type="radio" name="indoor-outdoor" value="outdoor" /> Outdoor</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>What's your cat's personality?</legend>
+          <label><input type="checkbox" name="personality" value="loving" checked /> Loving</label>
+          <label><input type="checkbox" name="personality" value="lazy" /> Lazy</label>
+          <label><input type="checkbox" name="personality" value="energetic" /> Energetic</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>How old is your cat?</legend>
+          <label><input type="radio" name="age" value="kitten" /> Kitten</label>
+          <label><input type="radio" name="age" value="junior" /> Junior</label>
+          <label><input type="radio" name="age" value="adult" /> Adult</label>
+          <label><input type="radio" name="age" value="mature" /> Mature</label>
+          <label><input type="radio" name="age" value="senior" /> Senior</label>
+          <label><input type="radio" name="age" value="super-senior" /> Super Senior</label>
+          <p><a href="https://storage.googleapis.com/writer-assistant-storage-public/images/2c1669cf-bf8f-4ce0-bc20-382145600ac0/99b0cd75-ffec-4069-a2d3-db5b04671294/95d2671c-1e35-4597-9817-952e41e3602b.jpg" target="_blank" rel="noopener noreferrer">Check the age chart</a></p>
+        </fieldset>
+
+        <label for="catphotourl"><strong>Cat photo URL</strong></label>
+        <input id="catphotourl" type="text" name="catphotourl" placeholder="Paste a cat photo URL here" required />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>No copyright claimed — I don't own any of these pictures.</p>
+    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGhjYWpvdndkaXRhY3picmJ5OXBzMHlvOG90N3U1c3B1cXB6MDVrdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MDJ9IbxxvDUQM/giphy.gif" alt="Animated cat" />
+  </footer>
+</body>
+</html>
