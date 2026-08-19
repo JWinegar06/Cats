@@ -1,5 +1,5 @@
 # Cats
-Intro to HTML – Cat Facts Page
+Intro to HTML 
 
 This is a simple Intro to HTML project featuring a webpage about cats.
 
